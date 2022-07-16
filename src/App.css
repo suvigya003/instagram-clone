@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+*{
+  margin:0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  background-color:#fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app__header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  /* width: 30px;
+  height: 3px;*/
   }
+.app__headerImage{
+  /* border: 2px solid red; */
+  width: 110px;
+    height: 30px;
+object-fit: contain;
+/*keep aspect ratio as-it-is no matter how much header gets bigger or smaller in size but the logo shouldn't get stretched */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__signup{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.app__posts{
+  padding: 20px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__postsRight{
+  margin-left: 20px;
 }
